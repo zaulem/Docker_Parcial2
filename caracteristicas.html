@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Parcial 2 - Samuel Saenz</title>
+</head>
+
+<!-- Encabezado de Pagina -->
+<header>
+    <h1>Docker - Contenedores de software</h1>
+
+</header>
+
+<!-- Body de la Pagina -->
+<body>
+    <div class="navBar">
+
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="definicion.html">¿Qué es?</a></li>
+            <li><a href="caracteristicas.html">Características</a></li>
+            <li><a href="instalacion.html">Instalación</a></li>
+        </ul>
+
+    </div>
+
+    <div class="contenido">
+
+        <h2>Características de Docker</h2>
+
+        <h3>¿Cómo funciona?</h3>
+        <p>La arquitectura de Docker consta de cuatro componentes principales:</p>
+        <div class="imagenes">
+            <img src="img/ContenedoresDocker.png" >
+        </div>    
+        <ul class="caracteristicas">
+            <li><b>Cliente Docker:</b> es el componente principal para crear, gestionar y ejecutar aplicaciones en contenedores. El cliente Docker es el método principal para controlar el servidor Docker a través de una CLI como Command Prompt (Windows) o Terminal (macOS, Linux).</li>
+            <li><b>Servidor Docker:</b> también conocido como demonio Docker. Espera las peticiones de la API REST realizadas por el cliente Docker y gestiona las imágenes y los contenedores.</li>
+            <li><b>Imágenes Docker: </b>indican al servidor Docker los requisitos para crear un contenedor Docker. Las imágenes pueden descargarse de sitios web como Docker Hub. También es posible crear una imagen personalizada: para ello, los usuarios deben crear un archivo Docker y pasarlo al servidor. Hay que tener en cuenta que Docker no borra las imágenes que no se utilizan, por lo que los usuarios tienen que eliminar ellos mismos los datos de la imagen antes de que haya demasiados.</li>
+            <li><b>Registro Docker:</b> es una aplicación de código abierto del lado del servidor que se utiliza para alojar y distribuir imágenes de Docker. El registro es muy útil para almacenar imágenes localmente y mantener un control completo sobre ellas. Como alternativa, los usuarios pueden acceder al ya mencionado Docker Hub, el mayor repositorio de imágenes Docker del mundo.</li>
+        </ul>
+
+        <div class="imagenes">
+            <img src="img/dockerInterfaz.jpg" >
+        </div>
+
+        <h3>Casos de uso de Docker</h3>
+        <p>Docker tiene una amplia gama de aplicaciones. En esta sección, revisaremos tres casos de uso habituales de Docker y explicaremos cómo puedes beneficiarte de él.</p>
+
+        <h4>Para probar un nuevo software</h4>
+        <p>Con Docker, puedes probar un nuevo software sin instalarlo manualmente. Docker también es útil si necesitas tener una pieza de software lista rápidamente. Por ejemplo, configurar un servidor MySQL es un proceso largo y tedioso. Con Docker, sólo hace falta un comando a través de la CLI para hacerlo.</p>
+
+        <h4>Para conocer la CLI</h4>
+        <p>Aunque Docker puede funcionar en todo tipo de máquinas, fue diseñado principalmente para Linux. Por lo tanto, recomendamos configurarlo en un sistema basado en Linux. Te proporcionará una excelente oportunidad para aprender más sobre la administración del sistema, la interfaz de la línea de comandos y los scripts.</p>
+
+        <h4>Para reducir el riesgo de incidencias</h4>
+        <p>En caso de fallo del hardware, los usuarios pueden revertir rápidamente cualquier cambio sí tienen una imagen de Docker preparada. Sólo tienen que importar la copia de seguridad de la imagen a una nueva máquina, y Docker hará el resto. Las copias de seguridad de imágenes de Docker también son beneficiosas cuando los desarrolladores quieren volver a una versión anterior de un software específico debido a errores o incompatibilidad.</p>
+
+        <p>Referencia: <a href=" https://www.hostinger.es/tutoriales/que-es-docker" target="_blank">Hostinger</a></p>
+
+        <div class="autor">
+            <div class="autorFoto">
+                <img src="img/Autor.jpg" >
+            </div>
+            <h4>Samuel Saenz</h4>
+            <p>
+                Estudiante de Lic. en Desarrollo y Gestión de Software en la UTP, le apaciona la programación, los video juegos y escuchar musica. 
+                Los fines de semana por las mañana no hace nada, y en la tarde descansa.
+            </p>
+        </div>
+
+    </div>
+    
+</body>
+
+
+<!-- Pie de Pagina -->
+<footer>
+    <p>&copy; 2024 Samuel Saenz. Todos los derechos reservados.</p>
+</footer>
+
+
+</html>

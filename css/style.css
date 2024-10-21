@@ -1,0 +1,256 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #096BAB;
+    color: #333;
+}
+
+/*Header*/
+header {
+    background-color: #0F0A59;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Barra de navegacion*/
+.navBar {
+    background-color: #0C2D7F;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navBar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navBar ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navBar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.navBar ul li a:hover {
+    background-color: #0F0A59;
+}
+
+
+/*Contenido de la pagina*/
+.contenido {
+    padding: 20px;
+    margin: auto 200px 0;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+.contenido p{
+    margin: 0 20px 0 20px;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+
+/*Clase de la pagina definicion.html*/
+.Pros_Contras{
+
+    margin: 0 20px 0 20px;
+    padding: 10px;
+}
+
+/*contenido de las listas*/
+ul li{
+    padding: 10px;
+    text-align: justify;
+}
+
+ol li{
+    padding: 10px;
+    text-align: justify;
+}
+
+
+/*Diseño de las imagenes*/
+img{
+    padding: 10px;
+}
+
+.centrarImagen{
+    text-align: center;
+}
+.centrarImagen img{
+    width: 50%;
+}
+
+.imagenes{
+    text-align: center;
+}
+
+.imagenes img{
+    width: 80%;
+}
+
+.imgComparacion{
+    text-align:center ;
+}
+.imgComparacion img{
+    width: 75%;
+}
+
+
+.autor{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(227, 235, 241);
+}
+
+.autor h4{
+    
+    font-size: 24px;
+}
+
+.autor p{
+    color: #555;
+    font-size: 16px;
+    margin-left: 30px;
+    text-align: justify;
+}
+
+.autorFoto{
+    text-align: center;
+}
+
+.autorFoto img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+
+/*Pie de pagina*/
+footer {
+    background-color: #0F0A59;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    bottom: 0;
+}
+
+footer p{
+    text-align: center;
+}
+
+
+/* Usando @media */
+@media (max-width: 1200px) {
+    .contenido {
+        margin: 0 50px; 
+    }
+
+    .navBar ul li {
+        margin-right: 10px; 
+    }
+
+    .navBar ul li a {
+        padding: 15px; 
+    }
+
+    .autor h4 {
+        font-size: 20px;
+    }
+
+    .autor p {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 992px) {
+    .contenido {
+        margin: 0 20px;
+    }
+
+    .navBar {
+        padding: 5px 0; 
+    }
+
+    .navBar ul li {
+        display: block; 
+        margin: 5px 0; 
+    }
+
+    .navBar ul li a {
+        display: block;
+        padding: 10px; 
+    }
+
+    .autor {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .autor p {
+        margin-left: 0;
+        text-align: center; 
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8em; 
+    }
+
+    .autorFoto img {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .centrarImagen img {
+        width: 100%; 
+    }
+
+    .imagenes img {
+        width: 100%; 
+    }
+
+    .imgComparacion img {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .navBar ul li {
+        margin-right: 5px;
+    }
+
+    .navBar ul li a {
+        padding: 8px;
+    }
+
+    .contenido {
+        padding: 10px;
+    }
+
+    .autor {
+        padding: 10px;
+    }
+}
